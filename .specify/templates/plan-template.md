@@ -31,7 +31,17 @@
 
 *GATE: Must pass before Phase 0 research. Re-check after Phase 1 design.*
 
-[Gates determined based on constitution file]
+- [ ] **Spec-Driven Authorship**: Does this plan trace back to a clear spec?
+- [ ] **Technical Accuracy**: Is the technical information proposed factually correct and verifiable?
+- [ ] **Clarity**: Is the plan written in a way that is understandable to the target audience?
+- [ ] **Modularity & Reusability**: Does the proposed structure promote modular and reusable components/chapters?
+- [ ] **AI-Assisted Workflow Integrity**: Does the plan adhere to the Spec-Kit Plus methodology?
+- [ ] **Standardized Structure**: Does the plan follow the Docusaurus and spec file structure?
+- [ ] **Tooling Standardization**: Are the tools and commands specified verifiable?
+- [ ] **High-Quality Writing**: Does the plan meet the project's writing standards?
+- [ ] **Primary Source Citation**: Are claims backed by primary sources where necessary?
+- [ ] **Zero Fluff**: Is the plan concise and focused on practical implementation?
+- [ ] **Project Constraints**: Does the plan respect the book length, word count, and other constraints?
 
 ## Project Structure
 

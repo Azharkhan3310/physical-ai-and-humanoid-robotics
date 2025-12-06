@@ -1,0 +1,6 @@
+build
+dist
+.docusaurus
+node_modules
+docs
+static
