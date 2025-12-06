@@ -1,0 +1,57 @@
+# Gitignore for Physical AI & Humanoid Robotics Book
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+dist/
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+
+# Node.js / JavaScript / Docusaurus
+node_modules/
+build/
+.docusaurus/
+.cache/
+*.log
+.env
+.env.local
+.DS_Store
+*.tmp
+tmp/
+
+# C++ / ROS 2
+build/
+install/
+log/
+*.cmake
+*.o
+*.so
+*.a
+*.exe
+*.dll
+*.gch
+*.d
+*.dep
+*.core
+
+# IDEs
+.vscode/
+.idea/
+
+# Other
+*.bak
+*.swp
+*~
+*.sublime-project
+*.sublime-workspace
+.project
+.cproject
+.settings
+.vs/
+.history/
+*.user
+tags
+cscope.*
