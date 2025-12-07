@@ -117,7 +117,7 @@ def generate_launch_description():
 
 A master launch file that demonstrates how to launch all the components of the VLA pipeline together is available in the examples for this chapter. The README provides a complete overview of how to run the full system.
 
--   [**Chapter 15 Example: README**](../../../examples/ch15/README.md)
+-   [**Chapter 15 Example: README**](/examples/ch15/README)
 -   [**Chapter 15 Example: Launch File**](../../../examples/ch15/vla_pipeline.launch.py)
 
 ## Next Steps

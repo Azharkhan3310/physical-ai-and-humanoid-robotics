@@ -90,7 +90,7 @@ class WhisperNode(Node):
 
 A complete, well-documented ROS 2 node that implements the speech-to-text pipeline described above is available in the examples for this chapter. The README file includes full details on dependencies, setup, and how to run the node.
 
--   [**Chapter 13 Example: README**](../../../examples/ch13/README.md)
+-   [**Chapter 13 Example: README**](/examples/ch13/README)
 -   [**Chapter 13 Example: Python Node**](../../../examples/ch13/whisper_node.py)
 
 ## Next Steps

@@ -1,0 +1,42 @@
+name: Deploy Docusaurus to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main # Set a branch to deploy from
+
+jobs:
+  deploy:
+    name: Deploy to GitHub Pages
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # Not required if you don't use Docusaurus' "last updated" feature
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm # Cache npm dependencies
+
+      - name: Install dependencies
+        run: npm install
+        working-directory: ./docusaurus
+
+      - name: Build Docusaurus website
+        run: npm run build
+        working-directory: ./docusaurus
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          # The publish_dir should be relative to the root of the repository.
+          # The Docusaurus build output is usually in `docusaurus/build`.
+          publish_dir: ./docusaurus/build
+          # This is important for single-page applications or Docusaurus sites
+          # to ensure that the server serves /index.html for all requests
+          # that are not for existing files.
+          cname: physical-ai-robotics.github.io
+          # Optionally, if you have a custom domain, add this:
+          # cname: example.com

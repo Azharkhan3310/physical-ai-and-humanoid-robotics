@@ -88,7 +88,7 @@ A full set of example files for launching and configuring Nav2 for our simulated
 
 Full instructions on how to generate a map and run the launch file are available in the README.
 
--   [**Chapter 12 Example: README**](../../../examples/ch12/README.md)
+-   [**Chapter 12 Example: README**](/examples/ch12/README)
 -   [**Chapter 12 Example: Launch File**](../../../examples/ch12/nav2_bringup.launch.py)
 -   [**Chapter 12 Example: Parameters File**](../../../examples/ch12/nav2_params.yaml)
 

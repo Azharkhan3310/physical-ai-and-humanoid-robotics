@@ -82,7 +82,7 @@ A complete ROS 2 launch file has been created to demonstrate how to run the Apri
 
 Full instructions on how to run the launch file and verify its output are available in the README.
 
--   [**Chapter 11 Example: README**](../../../examples/ch11/README.md)
+-   [**Chapter 11 Example: README**](/examples/ch11/README)
 -   [**Chapter 11 Example: Launch File**](../../../examples/ch11/apriltag_pipeline.launch.py)
 
 ## Next Steps

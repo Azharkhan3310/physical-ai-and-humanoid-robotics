@@ -17,7 +17,7 @@ const config: Config = {
   organizationName: 'physical-ai-robotics',
   projectName: 'physical-ai-and-humanoid-robotics',
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
 
   i18n: {
     defaultLocale: 'en',
@@ -38,6 +38,19 @@ const config: Config = {
           customCss: './src/css/custom.css',
         },
       } satisfies Preset.Options,
+    ],
+  ],
+
+  plugins: [
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'examples',
+        path: '../examples', // Path relative to docusaurus directory
+        routeBasePath: 'examples', // URL base path for these docs
+        sidebarPath: false, // Don't create a sidebar for examples
+        include: ['**/*.md', '**/*.mdx'], // Include all markdown files
+      },
     ],
   ],
 

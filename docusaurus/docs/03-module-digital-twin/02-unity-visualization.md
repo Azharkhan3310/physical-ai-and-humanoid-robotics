@@ -90,7 +90,7 @@ The ROS-TCP-Connector requires a ROS 2 launch file to start the communication se
 For a complete guide on configuring the Unity project, including installing the necessary `ROS-TCP-Connector` and `URDF-Importer` packages, please refer to the example created for this chapter.
 
 The setup instructions are available in the project's example directory:
-[**Chapter 8 Example: Unity Setup Guide**](../../../examples/ch08/README.md)
+[**Chapter 8 Example: Unity Setup Guide**](/examples/ch08/README)
 
 ## Conclusion
 

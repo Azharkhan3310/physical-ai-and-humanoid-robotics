@@ -111,7 +111,7 @@ A complete ROS 2 node that implements the LLM planning logic described above is 
 
 The README file includes full details on the node's architecture, prerequisites, and how to run it to see the full (mock) pipeline in action.
 
--   [**Chapter 14 Example: README**](../../../examples/ch14/README.md)
+-   [**Chapter 14 Example: README**](/examples/ch14/README)
 -   [**Chapter 14 Example: Python Node**](../../../examples/ch14/llm_planner_node.py)
 
 ## Next Steps

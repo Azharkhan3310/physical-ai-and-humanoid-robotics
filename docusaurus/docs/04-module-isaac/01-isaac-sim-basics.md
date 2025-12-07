@@ -53,7 +53,7 @@ To see the concepts above in action, a Python script has been created that progr
 
 Full instructions on how to run the script within the Isaac Sim environment are available in the README.
 
--   [**Chapter 10 Example: README**](../../../examples/ch10/README.md)
+-   [**Chapter 10 Example: README**](/examples/ch10/README)
 -   [**Chapter 10 Example: Python Script**](../../../examples/ch10/basic_scene.py)
 
 ## Next Steps
