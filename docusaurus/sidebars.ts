@@ -1,38 +1,53 @@
 import type {SidebarsConfig} from '@docusaurus/plugin-content-docs';
 
-// This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
-
-/**
- * Creating a sidebar enables you to:
- - create an ordered group of docs
- - render a sidebar for each doc of that group
- - provide next/previous navigation
-
- The sidebars can be generated from the filesystem, or explicitly defined here.
-
- Create as many sidebars as you want.
- */
 const sidebars: SidebarsConfig = {
   bookSidebar: [
-    '00-introduction',
+    'intro',
     {
       type: 'category',
       label: 'Setup and Installation',
       items: [
-        '01-setup/01-lab-setup',
+        'setup/lab-setup',
       ],
     },
     {
       type: 'category',
       label: 'Module 1: The Robotic Nervous System (ROS 2)',
       items: [
-        '02-module-ros2/01-ros2-architecture',
-        '02-module-ros2/02-ros2-nodes',
-        '02-module-ros2/03-topics-services-actions',
-        '02-module-ros2/04-robot-description-urdf',
+        'module-ros2/ros2-architecture',
+        'module-ros2/ros2-nodes',
+        'module-ros2/topics-services-actions',
+        'module-ros2/robot-description-urdf',
       ],
     },
-    // Add other modules here as they are written
+    {
+        type: 'category',
+        label: 'Module 2: The Digital Twin',
+        items: [
+            'module-digital-twin/gazebo-worlds',
+            'module-digital-twin/unity-visualization',
+            'module-digital-twin/simulating-sensors-and-physics',
+        ],
+    },
+    {
+        type: 'category',
+        label: 'Module 3: The AI-Robot Brain',
+        items: [
+            'module-isaac/isaac-sim-basics',
+            'module-isaac/perception-isaac-ros',
+            'module-isaac/navigation-nav2',
+        ],
+    },
+    {
+        type: 'category',
+        label: 'Module 4: Vision-Language-Action',
+        items: [
+            'module-vla/voice-control-whisper',
+            'module-vla/llm-planning',
+            'module-vla/full-vla-pipeline',
+        ],
+    },
+    'capstone-project',
   ],
 };
 

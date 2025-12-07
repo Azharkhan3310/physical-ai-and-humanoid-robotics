@@ -85,6 +85,13 @@ The ROS-TCP-Connector requires a ROS 2 launch file to start the communication se
     - Configure the topic name (e.g., `/unity_robot/chatter`) and message type (e.g., `std_msgs/String`).
 3.  **Run Simulation**: Play the Unity scene. If the ROS 2 endpoint is running, Unity should connect and start receiving messages if you have a ROS 2 node publishing to `/unity_robot/chatter`.
 
+## Example Project Configuration
+
+For a complete guide on configuring the Unity project, including installing the necessary `ROS-TCP-Connector` and `URDF-Importer` packages, please refer to the example created for this chapter.
+
+The setup instructions are available in the project's example directory:
+[**Chapter 8 Example: Unity Setup Guide**](../../../examples/ch08/README.md)
+
 ## Conclusion
 
 Unity's powerful rendering capabilities, combined with the ROS-TCP-Connector, allow for advanced visualization of ROS 2 simulations. This provides a visually rich environment for debugging, demonstrating, and even developing new sensor simulations. In the next chapter, we will delve deeper into simulating complex robot behaviors, including realistic sensors and physics.

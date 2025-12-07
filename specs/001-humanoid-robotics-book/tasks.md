@@ -67,9 +67,9 @@
 - [x] T018 [P] [M2] Write Chapter 7: Building Simulation Worlds (Gazebo), in `docusaurus/docs/03-module-digital-twin/01-gazebo-worlds.md`.
 - [x] T019 [M2] Develop the example Gazebo world for Chapter 7 in `examples/ch07/` and add command outputs/links to the chapter per FR-008.
 - [x] T020 [P] [M2] Write Chapter 8: Advanced Visualization (Unity), in `docusaurus/docs/03-module-digital-twin/02-unity-visualization.md`.
-- [ ] T021 [M2] Configure the Unity project with ROS-TCP-Connector for Chapter 8 in `examples/ch08/` and add command outputs/links to the chapter per FR-008.
-- [ ] T022 [P] [M2] Write Chapter 9: Simulating Sensors and Physics, in `docusaurus/docs/03-module-digital-twin/03-simulating-sensors.md`.
-- [ ] T023 [M2] Add LiDAR, camera, and IMU sensor plugins to the robot's URDF/SDF model for Chapter 9 in `examples/ch09/` and add command outputs/links to the chapter per FR-008.
+- [x] T021 [M2] Configure the Unity project with ROS-TCP-Connector for Chapter 8 in `examples/ch08/` and add command outputs/links to the chapter per FR-008.
+- [x] T022 [P] [M2] Write Chapter 9: Simulating Sensors and Physics, in `docusaurus/docs/03-module-digital-twin/03-simulating-sensors.md`.
+- [x] T023 [M2] Add LiDAR, camera, and IMU sensor plugins to the robot's URDF/SDF model for Chapter 9 in `examples/ch09/` and add command outputs/links to the chapter per FR-008.
 
 ---
 
@@ -78,12 +78,12 @@
 **Goal**: Write the chapters and create examples for AI-based perception and navigation using NVIDIA Isaac Sim.
 **Independent Test**: A reader can run the Isaac Sim perception pipeline to detect objects and use Nav2 to navigate the robot in a simulated environment.
 
-- [ ] T024 [P] [M3] Write Chapter 10: Isaac Sim for Photorealistic Simulation, in `docusaurus/docs/04-module-isaac/01-isaac-sim-basics.md`.
-- [ ] T025 [M3] Create the Isaac Sim environment for Chapter 10 in `examples/ch10/` and add command outputs/links to the chapter per FR-008.
-- [ ] T026 [P] [M3] Write Chapter 11: Perception with Isaac ROS, in `docusaurus/docs/04-module-isaac/02-perception-isaac-ros.md`.
-- [ ] T027 [M3] Implement an AprilTag detection pipeline using Isaac ROS GEMs for Chapter 11 in `examples/ch11/` and add command outputs/links to the chapter per FR-008.
-- [ ] T028 [P] [M3] Write Chapter 12: Navigation with Nav2, in `docusaurus/docs/04-module-isaac/03-navigation-nav2.md`.
-- [ ] T029 [M3] Configure Nav2 for the simulated robot and test navigation in the Isaac Sim environment for Chapter 12 in `examples/ch12/` and add command outputs/links to the chapter per FR-008.
+- [x] T024 [P] [M3] Write Chapter 10: Isaac Sim for Photorealistic Simulation, in `docusaurus/docs/04-module-isaac/01-isaac-sim-basics.md`.
+- [x] T025 [M3] Create the Isaac Sim environment for Chapter 10 in `examples/ch10/` and add command outputs/links to the chapter per FR-008.
+- [x] T026 [P] [M3] Write Chapter 11: Perception with Isaac ROS, in `docusaurus/docs/04-module-isaac/02-perception-isaac-ros.md`.
+- [x] T027 [M3] Implement an AprilTag detection pipeline using Isaac ROS GEMs for Chapter 11 in `examples/ch11/` and add command outputs/links to the chapter per FR-008.
+- [x] T028 [P] [M3] Write Chapter 12: Navigation with Nav2, in `docusaurus/docs/04-module-isaac/03-navigation-nav2.md`.
+- [x] T029 [M3] Configure Nav2 for the simulated robot and test navigation in the Isaac Sim environment for Chapter 12 in `examples/ch12/` and add command outputs/links to the chapter per FR-008.
 
 ---
 
@@ -92,12 +92,12 @@
 **Goal**: Write the chapters and create examples for the complete VLA pipeline.
 **Independent Test**: A reader can give a voice command to the robot in simulation and have it execute a planned task.
 
-- [ ] T030 [P] [M4] Write Chapter 13: Voice Control with Whisper, in `docusaurus/docs/05-module-vla/01-voice-control-whisper.md`.
-- [ ] T031 [M4] Implement the Whisper-to-text ROS 2 node for Chapter 13 in `examples/ch13/` and add command outputs/links to the chapter per FR-008.
-- [ ] T032 [P] [M4] Write Chapter 14: LLM-based Planning, in `docusaurus/docs/05-module-vla/02-llm-planning.md`.
-- [ ] T033 [M4] Implement the LLM planner ROS 2 node that converts text to action goals for Chapter 14 in `examples/ch14/` and add command outputs/links to the chapter per FR-008.
-- [ ] T034 [P] [M4] Write Chapter 15: The Full VLA Pipeline, in `docusaurus/docs/05-module-vla/03-full-vla-pipeline.md`.
-- [ ] T035 [M4] Integrate the Whisper, LLM, and Nav2 nodes into a complete pipeline for Chapter 15 in `examples/ch15/` and add command outputs/links to the chapter per FR-008.
+- [x] T030 [P] [M4] Write Chapter 13: Voice Control with Whisper, in `docusaurus/docs/05-module-vla/01-voice-control-whisper.md`.
+- [x] T031 [M4] Implement the Whisper-to-text ROS 2 node for Chapter 13 in `examples/ch13/` and add command outputs/links to the chapter per FR-008.
+- [x] T032 [P] [M4] Write Chapter 14: LLM-based Planning, in `docusaurus/docs/05-module-vla/02-llm-planning.md`.
+- [x] T033 [M4] Implement the LLM planner ROS 2 node that converts text to action goals for Chapter 14 in `examples/ch14/` and add command outputs/links to the chapter per FR-008.
+- [x] T034 [P] [M4] Write Chapter 15: The Full VLA Pipeline, in `docusaurus/docs/05-module-vla/03-full-vla-pipeline.md`.
+- [x] T035 [M4] Integrate the Whisper, LLM, and Nav2 nodes into a complete pipeline for Chapter 15 in `examples/ch15/` and add command outputs/links to the chapter per FR-008.
 
 ---
 
@@ -106,9 +106,9 @@
 **Goal**: Write the final capstone project chapter, integrating all previous modules.
 **Independent Test**: The full project is reproducible and achieves the primary success criteria of the book.
 
-- [ ] T036 [C1] Write Chapter 16: Capstone Project - Autonomous Humanoid Assistant, in `docusaurus/docs/06-capstone-project.md`.
-- [ ] T037 [C1] Assemble and document the final integrated code for the capstone project in `examples/ch16/` and add command outputs/links to the chapter per FR-008.
-- [ ] T038 [C1] Create a comprehensive `README.md` for the final project explaining how to run it.
+- [x] T036 [C1] Write Chapter 16: Capstone Project - Autonomous Humanoid Assistant, in `docusaurus/docs/06-capstone-project.md`.
+- [x] T037 [C1] Assemble and document the final integrated code for the capstone project in `examples/ch16/` and add command outputs/links to the chapter per FR-008.
+- [x] T038 [C1] Create a comprehensive `README.md` for the final project explaining how to run it.
 - [ ] T039 [C1] Record a video demonstration of the final project running in simulation.
 
 ---
