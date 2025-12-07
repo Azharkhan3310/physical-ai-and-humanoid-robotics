@@ -1,85 +1,39 @@
-# Data Model: Physical AI & Humanoid Robotics Book
+# Data Model: Humanoid Robotics Book Feature
 
-This document defines the high-level data model for the book's content structure. The model is hierarchical and primarily concerns the organization of Markdown/MDX files and associated assets.
+**Feature**: Humanoid Robotics Book Feature
+**Date**: 2025-12-07
 
-## Entity Relationship Diagram
+## Entities
 
-```mermaid
-graph TD
-    Book --> Module1[Module 1: ROS 2];
-    Book --> Module2[Module 2: Digital Twin];
-    Book --> Module3[Module 3: AI-Robot Brain];
-    Book --> Module4[Module 4: VLA];
-    Book --> Capstone[Capstone Project];
+### Documentation Page
 
-    Module1 --> C1[Chapter 1];
-    Module1 --> C2[Chapter 2];
-    C1 --> S1[Section 1.1];
-    C1 --> S2[Section 1.2];
+**Description**: Represents a single unit of content within the book, intended to be displayed as a navigable page in the Docusaurus documentation site.
 
-    subgraph "Content Asset"
-        A1[Code Snippet];
-        A2[Image / Diagram];
-        A3[Video];
-    end
+**Attributes**:
+- **id**: Unique identifier for the page (e.g., file path relative to docs directory, or a generated slug).
+- **title**: The human-readable title of the page.
+- **content**: The main body of the page, including text, embedded images, and references to code snippets. Format is Markdown/MDX.
+- **chapter_id**: Reference to the chapter this page belongs to, establishing hierarchical structure.
+- **tags**: Optional keywords for categorization and search.
+- **last_modified_date**: Timestamp of the last update to the page content.
+- **code_examples_referenced**: A list of `Code Example` IDs embedded within or linked from this page.
 
-    S1 --> A1;
-    S2 --> A2;
-```
+**Relationships**:
+- Belongs to a Chapter (implicit in Docusaurus structure via directory hierarchy/sidebar).
+- Contains/references multiple `Code Example` entities.
 
-## Entity Descriptions
+### Code Example
 
-### Book
-- **Description**: The top-level entity representing the entire "Physical AI & Humanoid Robotics Book". It is the root container for all content.
-- **Attributes**:
-  - `title`: string (e.g., "Physical AI & Humanoid Robotics")
-  - `author`: string
-  - `version`: string (e.g., "1.0.0")
-- **Relationships**:
-  - Has many `Modules`
-  - Has one `Capstone Project`
+**Description**: A runnable snippet or file that demonstrates a specific robotics concept, directly associated with `Documentation Page` content.
 
-### Module
-- **Description**: A major thematic section of the book, corresponding to the core learning areas.
-- **Attributes**:
-  - `title`: string (e.g., "Module 1: The Robotic Nervous System (ROS 2)")
-  - `order`: integer (1-4)
-- **Relationships**:
-  - Belongs to one `Book`
-  - Has many `Chapters`
+**Attributes**:
+- **id**: Unique identifier for the code example (e.g., file path, or a generated hash).
+- **name**: A short, descriptive name for the example.
+- **language**: The programming language of the example (e.g., Python, C++, ROS DSL).
+- **code_body**: The actual source code of the example.
+- **file_path**: The relative path to the source file within the project's examples directory (if applicable).
+- **version_info**: Information about software dependencies and versions required for the example (e.g., ROS2 version, Python library versions).
+- **description**: A brief explanation of what the code example does and demonstrates.
 
-### Chapter
-- **Description**: A specific, self-contained lesson within a Module.
-- **Attributes**:
-  - `title`: string (e.g., "Creating ROS 2 Nodes (rclpy)")
-  - `order`: integer
-- **Relationships**:
-  - Belongs to one `Module`
-  - Has many `Sections`
-
-### Section
-- **Description**: A subsection within a chapter that explains a particular concept or provides a step-by-step guide.
-- **Attributes**:
-  - `title`: string (e.g., "Understanding Publishers and Subscribers")
-  - `order`: integer
-- **Relationships**:
-  - Belongs to one `Chapter`
-  - Contains many `Content Assets`
-
-### Content Asset
-- **Description**: A generic entity representing a piece of content embedded within a section, such as a code snippet, diagram, image, or video.
-- **Attributes**:
-  - `type`: enum (CODE, IMAGE, DIAGRAM, VIDEO)
-  - `source_path`: string (path to the asset file)
-  - `caption`: string
-- **Relationships**:
-  - Belongs to one `Section`
-
-## State Transitions
-- N/A. This is a content model, and entities do not have state beyond their existence and content.
-
-## Validation Rules
-- `Book` must contain at least 4 `Modules` and 1 `Capstone Project`.
-- `Module` `order` must be unique.
-- `Chapter` `order` must be unique within a `Module`.
-- All `Content Asset` `source_path` URIs must be valid and resolvable at build time.
+**Relationships**:
+- Can be referenced by one or more `Documentation Page` entities.

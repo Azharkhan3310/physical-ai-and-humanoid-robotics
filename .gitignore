@@ -16,9 +16,10 @@ build/
 .docusaurus/
 .cache/
 *.log
-.env
-.env.local
+*.env
+dist/
 .DS_Store
+Thumbs.db
 *.tmp
 tmp/
 

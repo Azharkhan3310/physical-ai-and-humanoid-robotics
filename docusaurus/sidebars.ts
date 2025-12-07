@@ -14,25 +14,56 @@ import type {SidebarsConfig} from '@docusaurus/plugin-content-docs';
  */
 const sidebars: SidebarsConfig = {
   bookSidebar: [
-    '00-introduction',
+    'intro', // '00-introduction.mdx' slugifies to 'intro'
     {
       type: 'category',
       label: 'Setup and Installation',
       items: [
-        '01-setup/01-lab-setup',
+        'setup/lab-setup',
+        'setup/toolchain-install',
       ],
     },
     {
       type: 'category',
       label: 'Module 1: The Robotic Nervous System (ROS 2)',
       items: [
-        '02-module-ros2/01-ros2-architecture',
-        '02-module-ros2/02-ros2-nodes',
-        '02-module-ros2/03-topics-services-actions',
-        '02-module-ros2/04-robot-description-urdf',
+        'module-ros2/ros2-architecture',
+        'module-ros2/ros2-nodes',
+        'module-ros2/topics-services-actions',
+        'module-ros2/robot-description-urdf',
       ],
     },
-    // Add other modules here as they are written
+    {
+      type: 'category',
+      label: 'Module 2: The Digital Twin (Gazebo & Unity)',
+      items: [
+        'module-digital-twin/gazebo-worlds',
+        'module-digital-twin/unity-visualization',
+        'module-digital-twin/simulating-sensors',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Module 3: The AI-Robot Brain (NVIDIA Isaac Sim)',
+      items: [
+        'module-ai-robot-brain/introduction',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Module 4: Vision-Language-Action (VLA) Systems',
+      items: [
+        'module-vla-systems/introduction',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Module 5: Deploying Sim-to-Real Workflows',
+      items: [
+        'module-sim-to-real/introduction',
+      ],
+    },
+    'capstone-project', // '06-capstone-project.md' slugifies to 'capstone-project'
   ],
 };
 

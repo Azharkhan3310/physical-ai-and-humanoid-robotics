@@ -1,100 +1,92 @@
-# Feature Specification: Physical AI & Humanoid Robotics Book
+# Feature Specification: Humanoid Robotics Book Feature
 
-**Feature Branch**: `001-humanoid-robotics-book`
-**Created**: 2025-12-06
-**Status**: Draft
-**Input**: User description: "Physical AI & Humanoid Robotics Book..."
-
-## User Scenarios & Testing *(mandatory)*
-
-### User Story 1 - End-to-End Learning for Students (Priority: P1)
-
-As a student or developer new to embodied intelligence, I want to follow a clear, practical, simulation-to-reality learning path, so that I can understand how to build and program a complete autonomous humanoid robot pipeline.
-
-**Why this priority**: This is the core purpose of the book and targets the primary audience.
-
-**Independent Test**: A user can follow the book from start to finish, successfully building and running the capstone project (a voice-controlled robot in simulation) without needing external resources.
-
-**Acceptance Scenarios**:
-
-1.  **Given** a standard development environment (Ubuntu 22.04 + specified hardware), **When** the user follows the setup instructions, **Then** all required software (ROS 2, Gazebo, Isaac Sim) is installed and configured correctly.
-2.  **Given** the user completes Module 4, **When** they run the final capstone project, **Then** the simulated humanoid robot responds to voice commands and executes tasks as described.
-
----
-
-### User Story 2 - Course Material for Educators (Priority: P2)
-
-As an educator, I want to use the book's modular structure and reproducible examples, so that I can build a comprehensive course on AI and robotics for my students.
-
-**Why this priority**: This enables the book to be used in academic settings, broadening its impact.
-
-**Independent Test**: An educator can select any module (e.g., Module 2: Digital Twins) and use its content as a standalone teaching unit.
-
-**Acceptance Scenarios**:
-
-1.  **Given** an educator wants to teach about robot simulation, **When** they use the content from Module 2, **Then** their students can successfully create a simulated humanoid and its environment.
-
----
-
-### User Story 3 - Rapid Prototyping for Hobbyists (Priority: P3)
-
-As a robotics hobbyist or hackathon participant, I want to use the book's examples to quickly set up a humanoid robot in simulation and run advanced VLA pipelines, so that I can prototype my own ideas faster.
-
-**Why this priority**: This addresses a secondary audience that values practical, ready-to-use code.
-
-**Independent Test**: A user can jump directly to Module 4 (VLA), and by following its instructions (and referencing prerequisite setups), run a Vision-Language-Action pipeline on a Jetson Orin.
-
-**Acceptance Scenarios**:
-
-1.  **Given** a user has the required hardware and has completed the setup from earlier modules, **When** they follow the examples in Module 4, **Then** they can successfully control the robot using natural language.
-
----
-
-### Edge Cases
-
-- The example code for voice commands will implement a direct feedback loop where the robot responds with "Command not understood, please be more specific," and this behavior will be documented within Module 4 (VLA).
-- Each simulation module (Gazebo, Isaac Sim) will include a "Common Problems" section detailing frequent errors (e.g., graphics driver issues, incorrect paths) and their solutions. It will also guide users to check official forums for more complex issues.
-- A "pre-flight checklist" will be included at the beginning of each "sim-to-real" chapter (e.g., in Module 3 and 4) to guide users in verifying hardware connections, driver status, and common configurations for the Jetson Orin and RealSense D435i.
+**Feature Branch**: `001-humanoid-robotics-book`  
+**Created**: 2025-12-07  
+**Status**: Draft  
+**Input**: User description: "use humanoid robotics book feature"
 
 ## Clarifications
 
-### Session 2025-12-06
+### Session 2025-12-07
 
-- Q: What is the primary method the book should teach for handling ambiguous user voice commands? → A: The example code will implement a direct feedback loop where the robot responds with "Command not understood, please be more specific" and this behavior is documented within the VLA module.
-- Q: What is the most effective way for the book to prepare users for and guide them through potential hardware driver issues for the specified Jetson Orin and Intel RealSense D435i? → A: Include a dedicated checklist at the beginning of each "sim-to-real" chapter (e.g., in Module 3 and 4) to verify hardware connections, driver status, and common configurations.
-- Q: How should the book ensure and demonstrate "technical rigor" in a measurable and verifiable way for the beginner-intermediate audience? → A: Every command line instruction and code snippet MUST be accompanied by the exact expected result (screenshot/text), AND key concepts MUST link directly to official documentation or primary technical references.
-- Q: How should the book instruct users to handle crashes or failures when loading the simulation environments? → A: Each simulation module (Gazebo, Isaac Sim) will include a "Common Problems" section detailing frequent errors (e.g., graphics driver issues, incorrect paths) and their solutions. It will also guide users to check official forums for more complex issues.
+- Q: What is explicitly out of scope for the Humanoid Robotics Book Feature documentation platform? → A: The platform will not include user comments, personalized content, or e-commerce features.
+- Q: Are there any specific accessibility (e.g., WCAG level) or localization requirements for the documentation platform? → A: No specific accessibility or localization requirements beyond Docusaurus defaults.
+- Q: What are the target page load times (e.g., P95 for FCP/LCP) and search response times (e.g., P95) for the documentation platform? → A: Target a P95 page load time of under 2 seconds and a P95 search response time of under 1 second.
+- Q: What is the expected maximum concurrent user load and expected content growth (e.g., chapters/year) over the next 2 years? → A: Max 500 concurrent users; 5 new chapters/year.
+- Q: What are the security and privacy requirements (e.g., data encryption, user authentication, GDPR compliance) for the documentation platform? → A: No user authentication; data privacy through anonymized analytics; basic security hardening for static site hosting.
 
-## Requirements *(mandatory)*
+## Out of Scope
+
+The Humanoid Robotics Book Feature documentation platform explicitly excludes:
+-   User comments or feedback mechanisms.
+-   Personalized content delivery or user accounts.
+-   E-commerce functionalities (e.g., selling the book directly through the platform).
+
+## User Scenarios & Testing
+
+### User Story 1 - Access Book Documentation (Priority: P1)
+
+A user (student, researcher, hobbyist) wants to access the comprehensive documentation and tutorials for humanoid robotics, as presented in the "Humanoid Robotics Book" feature. They expect to find structured content that guides them through setup, concepts, and practical examples related to physical AI and humanoid robotics.
+
+**Why this priority**: Core functionality for a documentation feature is content accessibility.
+
+**Independent Test**: Can be fully tested by navigating through the documentation portal and verifying content readability and navigability.
+
+**Acceptance Scenarios**:
+
+1.  **Given** a user opens the documentation portal, **When** they navigate to a specific chapter or topic, **Then** the relevant content is displayed clearly and accurately.
+2.  **Given** a user searches for a keyword within the documentation, **When** they submit the search query, **Then** relevant search results are presented, linking directly to sections containing the keyword.
+
+### User Story 2 - Explore Code Examples (Priority: P2)
+
+A user wants to find and understand the code examples provided within the "Humanoid Robotics Book" feature to implement or experiment with specific robotics concepts. They need easy access to runnable code that directly relates to the theoretical content.
+
+**Why this priority**: Practical application of concepts is crucial for learning.
+
+**Independent Test**: Can be fully tested by locating a code example, understanding its context, and potentially copying/running it outside the documentation portal.
+
+**Acceptance Scenarios**:
+
+1.  **Given** a user is viewing a conceptual section, **When** they click on a linked code example, **Then** the code example is displayed in a readable format, possibly with syntax highlighting.
+2.  **Given** a user downloads example code, **When** they execute the provided scripts, **Then** the code runs as described in the documentation, demonstrating the intended functionality.
+
+### Edge Cases
+
+-   What happens when a page is not found (broken link or deprecated content)? System should display a user-friendly 404 page.
+-   How does the system handle outdated examples or dependencies? Documentation should include clear versioning information and warnings for known incompatibilities.
+
+## Requirements
 
 ### Functional Requirements
 
-- **FR-001**: The book MUST be structured into the 4 specified modules: ROS 2, Digital Twin, Isaac Sim, and VLA.
-- **FR-002**: All code, commands, and examples MUST be fully reproducible on an Ubuntu 22.04 workstation with an NVIDIA RTX 4070 Ti.
-- **FR-003**: The "sim-to-real" examples MUST be verifiable on a NVIDIA Jetson Orin with an Intel RealSense D435i camera.
-- **FR-004**: The book's final output format MUST be Markdown/MDX, organized and configured for a Docusaurus website.
-- **FR-005**: The content MUST NOT include deprecated technologies (e.g., ROS 1, Gazebo Classic), unless explicitly noted as a comparison.
-- **FR-006**: All diagrams, illustrations, and schematics used in the book MUST be original and technically accurate.
-- **FR-007**: The book MUST provide a complete, self-contained learning path, enabling a user to build the final capstone project from scratch.
-- **FR-008**: To ensure technical rigor, every command/script MUST be accompanied by its expected output (screenshot/text), and key concepts MUST link to official documentation.
+-   **FR-001**: The system MUST provide a structured hierarchical navigation for the book's content.
+-   **FR-002**: The system MUST allow users to search for keywords and phrases across all documentation.
+-   **FR-003**: The system MUST display code examples with appropriate syntax highlighting.
+-   **FR-004**: The system MUST provide mechanisms for users to download or copy code examples.
+-   **FR-005**: The system MUST ensure all documentation content is accessible on various screen sizes (responsive design).
+-   **FR-006**: The system MUST include versioning information for all code examples and relevant software dependencies.
 
-### Key Entities *(include if feature involves data)*
+### Non-Functional Requirements
 
-- **Book**: The top-level entity, containing Modules.
-- **Module**: A major section of the book (e.g., "The Robotic Nervous System"). Contains Chapters.
-- **Chapter**: A specific topic within a Module (e.g., "Understanding ROS 2 Nodes").
-- **Robot Model**: The digital representation of the humanoid robot (URDF/SDF).
-- **Simulation Environment**: The virtual world where the robot operates (Gazebo/Unity/Isaac Sim).
-- **AI Pipeline**: The set of software components for robot intelligence (Perception, Planning, Action).
-- **VLA System**: The specific Vision-Language-Action pipeline that integrates LLMs for control.
+-   **NFR-001**: The system MUST adhere to Docusaurus's default accessibility and localization standards.
+-   **NFR-002**: The platform MUST target a P95 page load time of under 2 seconds.
+-   **NFR-003**: The platform MUST target a P95 search response time of under 1 second.
+-   **NFR-004**: The platform MUST be able to handle a maximum of 500 concurrent users.
+-   **NFR-005**: The platform MUST be designed to accommodate an expected content growth of 5 new chapters per year over the next 2 years.
+-   **NFR-006**: The platform will NOT require user authentication.
+-   **NFR-007**: Data privacy will be maintained through anonymized analytics.
+-   **NFR-008**: Basic security hardening will be applied for static site hosting.
 
-## Success Criteria *(mandatory)*
+### Key Entities
+
+-   **Documentation Page**: Represents a single unit of content within the book, including text, images, and code snippets.
+-   **Code Example**: A runnable snippet or file demonstrating a robotics concept.
+
+## Success Criteria
 
 ### Measurable Outcomes
 
-- **SC-001**: **Completeness**: 100% of the topics listed in the 4-module book structure are covered with detailed explanations and working examples.
-- **SC-002**: **Reproducibility**: 95% of readers are able to successfully complete the capstone project on the specified hardware and software stack without errors.
-- **SC-003**: **Clarity**: The book's content achieves a Flesch Reading Ease score of 50-60, corresponding to a Grade 9-12 reading level, making it accessible to the target audience.
-- **SC-004**: **Deployment**: The Docusaurus site containing the book builds successfully and deploys to GitHub Pages with no broken links or missing content.
-- **SC-005**: **Capstone Functionality**: The final simulated robot successfully executes at least 3 different types of voice commands (e.g., navigation, object identification, simple interaction) correctly.
-- **SC-006**: **Technical Rigor**: 100% of code snippets and commands show their expected output, and at least 50 external links to official documentation for key technologies are included throughout the book.
+-   **SC-001**: 95% of users can successfully find information within the documentation using navigation or search within 3 minutes.
+-   **SC-002**: Code examples provided are successfully executed by 90% of users following the documentation instructions.
+-   **SC-003**: User satisfaction with the clarity and comprehensiveness of the documentation is rated 4 out of 5 stars or higher.
+-   **SC-004**: All external links within the documentation are functional and lead to the intended resources.

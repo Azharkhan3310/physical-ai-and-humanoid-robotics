@@ -5,6 +5,10 @@
       "args": [
         "npx @upstash/context7-mcp"
       ]
+    },
+    "github": {
+      "command": "gh mcp-server",
+      "args": []
     }
   }
 }

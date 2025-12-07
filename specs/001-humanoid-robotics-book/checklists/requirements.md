@@ -1,8 +1,8 @@
-# Specification Quality Checklist: Physical AI & Humanoid Robotics Book
+# Specification Quality Checklist: Humanoid Robotics Book Feature
 
-**Purpose**: Validate specification completeness and quality before proceeding to planning.
-**Created**: 2025-12-06
-**Feature**: [specs/001-humanoid-robotics-book/spec.md](spec.md)
+**Purpose**: Validate specification completeness and quality before proceeding to planning
+**Created**: 2025-12-07
+**Feature**: ../spec.md
 
 ## Content Quality
 
@@ -19,7 +19,7 @@
 - [x] Success criteria are technology-agnostic (no implementation details)
 - [x] All acceptance scenarios are defined
 - [x] Edge cases are identified
-- [x] Scope is clearly bounded (via "Not In Scope" section)
+- [x] Scope is clearly bounded
 - [x] Dependencies and assumptions identified
 
 ## Feature Readiness
@@ -31,4 +31,4 @@
 
 ## Notes
 
-- The specification is comprehensive and well-defined, drawing from a very detailed user prompt. All checks pass. The feature is ready for the planning phase.
+- Items marked incomplete require spec updates before `/sp.clarify` or `/sp.plan`
