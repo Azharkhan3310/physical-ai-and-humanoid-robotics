@@ -14,6 +14,11 @@
 - Q: What are the target page load times (e.g., P95 for FCP/LCP) and search response times (e.g., P95) for the documentation platform? → A: Target a P95 page load time of under 2 seconds and a P95 search response time of under 1 second.
 - Q: What is the expected maximum concurrent user load and expected content growth (e.g., chapters/year) over the next 2 years? → A: Max 500 concurrent users; 5 new chapters/year.
 - Q: What are the security and privacy requirements (e.g., data encryption, user authentication, GDPR compliance) for the documentation platform? → A: No user authentication; data privacy through anonymized analytics; basic security hardening for static site hosting.
+- Q: What are the target Service Level Objectives (SLOs) for uptime and data recovery for the documentation platform? → A: 99.9% uptime, 24h RTO/RPO
+- Q: What metrics or logging are required to monitor the health and usage of the documentation platform? → A: Page views, unique visitors, search queries
+- Q: Are there any additional compliance or regulatory requirements beyond basic security for the documentation platform? → A: No additional compliance requirements
+- Q: Were any significant design or feature tradeoffs considered and rejected? If so, what were they and why? → A: Not explicitly documented
+- Q: Is there a specific glossary or a set of canonical terms for key concepts (e.g., "module", "chapter", "code example")? → A: No dedicated glossary
 
 ## Out of Scope
 
@@ -76,6 +81,15 @@ A user wants to find and understand the code examples provided within the "Human
 -   **NFR-006**: The platform will NOT require user authentication.
 -   **NFR-007**: Data privacy will be maintained through anonymized analytics.
 -   **NFR-008**: Basic security hardening will be applied for static site hosting.
+-   **NFR-009**: The platform MUST target 99.9% uptime and have a 24-hour Recovery Time Objective (RTO) and Recovery Point Objective (RPO).
+-   **NFR-010**: The platform MUST collect metrics for page views, unique visitors, and search queries to monitor health and usage.
+-   **NFR-011**: The platform has no additional compliance or regulatory requirements beyond basic security hardening.
+
+### Constraints & Tradeoffs
+-   **CTR-001**: Significant design or feature tradeoffs are not explicitly documented within this specification.
+
+### Terminology & Consistency
+-   **TER-001**: There is no dedicated glossary or canonical set of terms beyond common Docusaurus/documentation terminology.
 
 ### Key Entities
 

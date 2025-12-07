@@ -15,9 +15,16 @@ The "Humanoid Robotics Book Feature" aims to provide comprehensive documentation
 **Testing**: Jest (for Docusaurus React components), potentially Pester (for PowerShell scripts).  
 **Target Platform**: Web (Static site hosted on GitHub Pages).  
 **Project Type**: Web application (static site generator).  
-**Performance Goals**: Fast initial page load (under 2 seconds), smooth navigation, responsive UI.  
-**Constraints**: Content must be compatible with Docusaurus Markdown/MDX, deployable via GitHub Actions to GitHub Pages.
-**Scale/Scope**: Documentation for a single book (approx. 8-12 chapters, 12,000-18,000 words).
+
+**Performance Goals**: Fast initial page load (P95 under 2 seconds), smooth navigation, responsive UI, search response (P95 under 1 second).  
+**Reliability**: Target 99.9% uptime with a 24-hour Recovery Time Objective (RTO) and Recovery Point Objective (RPO).  
+**Observability**: Collect metrics for page views, unique visitors, and search queries.  
+**Compliance**: No additional compliance or regulatory requirements beyond basic security hardening.  
+**Tradeoffs**: No significant design or feature tradeoffs are explicitly documented within this specification.  
+**Terminology**: No dedicated glossary; common Docusaurus/documentation terms are assumed.  
+
+**Constraints**: Content must be compatible with Docusaurus Markdown/MDX, deployable via GitHub Actions to GitHub Pages.  
+**Scale/Scope**: Documentation for a single book (approx. 8-12 chapters, 12,000-18,000 words), supporting a maximum of 500 concurrent users and accommodating 5 new chapters per year over the next 2 years.
 
 ## Constitution Check
 
