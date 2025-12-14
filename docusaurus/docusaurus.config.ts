@@ -11,11 +11,15 @@ const config: Config = {
     v4: true,
   },
 
-  url: 'https://physical-ai-robotics.github.io',
+  url: 'https://Azharkhan3310.github.io',
   baseUrl: '/physical-ai-and-humanoid-robotics/',
 
-  organizationName: 'physical-ai-robotics',
+  // Set the /<organizationName>/<projectName>/ pathname under which your site is served.
+  // For GitHub pages deployment, it is often '/<projectName>/'.
+
+  organizationName: 'Azharkhan3310',
   projectName: 'physical-ai-and-humanoid-robotics',
+  trailingSlash: false,
 
   onBrokenLinks: 'warn',
 

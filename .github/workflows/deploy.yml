@@ -37,6 +37,5 @@ jobs:
           # This is important for single-page applications or Docusaurus sites
           # to ensure that the server serves /index.html for all requests
           # that are not for existing files.
-          cname: physical-ai-robotics.github.io
           # Optionally, if you have a custom domain, add this:
           # cname: example.com
